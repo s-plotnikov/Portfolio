@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/11eda6e103/UntitledProject/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <nav class="header__menu">
+        <button class="menu__btn">
+          <span class="menu__btn-line"></span>
+        </button>
+        <ul class="header__menu-list">
+          <li class="header__menu-item"><a class="menu__list-link" href="#">Главная</a></li>
+          <li class="header__menu-item"><a class="menu__list-link" href="#about">Обо мне</a></li>
+          <li class="header__menu-item"><a class="menu__list-link" href="#works">Мои работы</a></li>
+          <li class="header__menu-item"><a class="menu__list-link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <section class="hello__section">
+    <div class="container">
+      <div class="hello__text">
+        <h1>Привет!</h1>
+        <div class="typed-strings">
+          <h1>Я Сергей Плотников</h1>
+          <h1>Я веб-разработчик</h1>
+        </div>
+        <span class="typed"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__wrapper">
+        <div class="about__photo">
+          <img src="img/photo.jpg" alt="">
+        </div>
+        <div class="about__inner">
+          <div class="about__title">
+            Обо мне
+          </div>
+          <div class="about__text">
+              <p> Меня зовут Сергей, я занимаюсь web-разработкой. У меня высшее техническое образование, по специальности "Технология машиностроения". В феврале 2020 года прошел онлайн курс по вёрстке сайтов. С тех пор каждый день стараюсь изучать новые технологии и оттачивать свои навыки вёрстки.</p>
+              <p>За это время освоил помимо базовых навыков, таких как HTML и CSS, препроцессор Sass, систему сборки Gulp, систему управления версиями Git. В своей работе придерживаюсь БЭМ методологии. В планах развиваться в должности front-end разработчика, углубляться в JavaScript. </p>
+              <p>Ранее работал на производстве, где получил большой опыт в сфере управления персоналом и коммуникации. Мои работы вы можете посмотреть ниже или перейдя на мою страничку на <a class="github-link" href="https://github.com/s-plotnikov">GitHub</a></p>
+          </div>
+          <div class="about__contacts">
+            <div class="about__contacts-inner">
+              <div class="about__contacts-subject icon-location"> Город</div>
+              <div class="about__contacts-value">: Барнаул</div>
+              <div class="about__contacts-subject icon-phone"> Телефон</div>
+              <a class="about__contacts-value" href="tel:+79231660692">: +7(923)-166-06-92</a>
+            </div>
+            <div class="about__contacts-inner">
+              <div class="about__contacts-subject icon-calendar"> Возраст</div>
+              <div class="about__contacts-value">: 29</div>
+              <div class="about__contacts-subject icon-envelop"> E-mail</div>
+              <a class="about__contacts-value" href="mailto:s-plotnikov@yandex.ru">: s-plotnikov@yandex.ru</a>
+            </div>
+          </div>
+          <a class="about__resume" href="https://yadi.sk/i/375xmS-9T_9_2A">Скачать резюме</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="works" id="works">
+    <div class="container">
+      <div class="works__title">Мои работы</div>
+      <div class="works__wrapper">
+        <a href="https://s-plotnikov.github.io/Renome_v1.1/app/">
+          <div class="scale"><img class=scale src="img/renome.jpg" alt=""></div>
+        </a>
+        <a href="https://s-plotnikov.github.io/Reloader/app/">
+          <div class="scale"><img class=scale src="img/reloader.jpg" alt=""></div>
+        </a>
+        <a href="#">
+          <div class="scale"><img class=scale src="img/wooder.jpg" alt=""></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts" id="contacts">
+    <div class="contacts__title">
+      Мои контакты
+    </div>
+    <div class="contacts__inner">
+      <div class="contacts__info">
+        <div class="contacts__text">
+          <a class="contacts__email" href="mailto:s-plotnikov@yandex.ru"> s-plotnikov@yandex.ru</a>
+          <a class="contacts__phone" href="tel:+79231660692"> +7(923)166-06-92</a>
+          <a class="contacts__github" href="https://github.com/s-plotnikov"> GitHub</a>
+        </div>
+      </div>
+      <div class="contacts__form">
+        <div class="contacts__form-title">
+          Обратная связь
+        </div>
+        <div class="contacts__form-line">
+          <input class="contacts__form-input" type="text" placeholder="Имя" type="text">
+          <input class="contacts__form-input" type="text" placeholder="E-mail" type="email">
+        </div>
+        <div class="contacts__form-textarea">
+          <textarea placeholder="Сообщение"></textarea>
+        </div>
+        <button class="contacts__form-btn" type="submit">Отправить</button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,325 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+
+.header {
+    background-color: #00b29c;
+    height: 80px;
+    &__menu {
+        color: #fff;
+        font-size: 16px;
+        line-height: 32px;
+        padding-top: 26px;
+        text-align: right;
+        padding-right: 30px;
+    }
+    &__menu-item {
+        display: inline-block;
+        & + .header__menu-item {
+            padding-left: 25px;
+        }
+    }
+}
+.menu__btn {
+    display: none;
+}
+
+.hello__section {
+    background-color: #00b29c;
+    margin-bottom: 70px;
+    position: relative;
+}
+.hello__section::after {
+    content: '';
+    background-image: url(../img/water.png);
+    position: absolute;
+    height: 87px;
+    width: 100%;
+    bottom: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hello__text {
+    padding-bottom: 185px;
+    padding-top: 40px;
+    font-size: 36px;
+    color: #fff;
+}
+
+
+.about{
+    margin-bottom: 85px;
+    &__wrapper {
+        display: flex;
+    }
+    &__photo {
+        position: relative;
+        margin-left: 40px;
+    }
+    &__photo:before {
+        content: '';
+        position: absolute;
+        border: 13px solid #00b29c;
+        top: -30px;
+        left: -30px;
+        width: 340px;
+        height: 453px;
+        z-index: -1;
+    }
+    &__inner {
+        max-width: 555px;
+        margin-left: 46px;
+        margin-right: 20px;
+    }
+    &__title {
+        font-size: 35px;
+        line-height: 56px;
+        font-weight: 600;
+        text-decoration: underline;
+        text-decoration-color: #00b29c;
+        margin-bottom: 22px;
+    }
+    &__text {
+        margin-bottom: 35px;
+        text-indent: 20px;
+    }
+    &__contacts {
+        margin-bottom: 35px;
+        position: relative;
+        padding-left: 5px;
+    }
+    &__contacts::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 80px;
+        background-color: #00b29c;
+        top: -15px;
+        left: 0;
+    }
+    &__contacts::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 80px;
+        background-color: #00b29c;
+        top: -15px;
+        right: -5px;
+    }
+    &__contacts-inner {
+        display: flex;
+        max-width: 555px;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    &__contacts-subject{
+        max-width: 100px;
+        width: 100%;
+        padding-right: 25px;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+    }
+    &__contacts-value{
+        font-size: 14px;
+        max-width: 260px;
+        width: 100%;
+    }
+    &__resume {
+        font-size: 22px;
+        font-weight: 600;
+        color: #00b29c;
+        text-decoration: underline;
+    }
+}
+.github-link{
+    font-weight: 600;
+    transition: all .2s;
+    &:hover{
+        color: #00b29c;
+    }
+}
+
+
+.typed-cursor {
+    opacity: 1;
+    font-size: 38px;
+}
+
+.typed-cursor.typed-cursor--blink {
+    font-size: 38px;
+}
+@keyframes blink{
+    0% { opacity:1; }
+     50% { opacity:0; }
+     100% { opacity:1; }
+}
+
+
+.works{
+    margin-bottom: 85px;
+    background-color: #e5f7f5;
+    &__title {
+        padding-top: 30px;
+        font-size: 35px;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: #00b29c;
+        margin-bottom: 50px;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 45px;
+    }
+}
+.scale {
+    display: inline-block;
+    overflow: hidden;
+}
+.scale img {
+    transition: 1s;
+    display: block;
+    width: 320px;
+    height: 330px;
+}
+.scale img:hover{
+    transform: scale(1.2);
+}
+
+.contacts {
+    background-color: #00b29c;
+    position: relative;
+    &::after {
+        content: '';
+        background-image: url(../img/water.png);
+        position: absolute;
+        height: 87px;
+        width: 100%;
+        top: 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &__title {
+        padding-top: 122px;
+        font-size: 35px;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    &__inner {
+        // display: flex;
+        // justify-content: space-around;
+        display: block;
+        padding-bottom: 30px;
+    }
+    &__form {
+        display: none;
+        max-width: 500px;
+        height: 235px;
+        background-color: #f6f6f6;
+        margin-bottom: 50px;
+        width: 100%;
+        
+    }
+    &__form-title {
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    &__form-line {
+        padding-left: 75px;
+    }
+    &__form-input {
+        border: none;
+        border-bottom: 1px solid #000000;
+        display: block;
+        max-width: 340px;
+        width: 100%;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    &__form-textarea {
+        margin-left: 75px;
+        display: block;
+        max-width: 340px;
+        width: 100%;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-bottom: 1px solid #000;
+        resize: none;
+    }
+    &__form-btn {
+        width: 160px;
+        height: 27px;
+        background-color: #00b29c;
+        color: #fff;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.contacts__email{
+    position: relative;
+}
+.contacts__email::before{
+    content: "\e945";
+    position: absolute;
+    font-family: 'icomoon';
+    top: 0;
+    left: -25px;
+}
+
+.contacts__phone{
+    position: relative;
+    &::before{
+        content: "\e942";
+        position: absolute;
+        font-family: 'icomoon';
+        top: 0;
+        left: -25px;
+    }
+}
+
+.contacts__github{
+    position: relative;
+    &::before{
+        content: "\eab0";
+        position: absolute;
+        font-family: 'icomoon';
+        top: 0;
+        left: -25px;
+    }
+}
+
+.contacts__text {
+    margin-left: 150px;
+    a{
+        display: block;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+@import "media";
+
